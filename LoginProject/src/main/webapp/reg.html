@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(150, 150, 228);
+            color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registration-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            color: yellow;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid yellow;
+            border-radius: 5px;
+            background-color: transparent;
+            color: yellow;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            background-color: yellow;
+            color: rgb(158, 158, 245);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: lightyellow;
+        }
+
+        form {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-box">
+        <form method="POST" action="reg">
+            <h1>Registration Form</h1>
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required><br><br>
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required><br><br>
+            <label for="uname">Username</label><br>
+            <input type="text" id="uname" name="uname" placeholder="Enter a username" required><br><br>
+            <label for="pword">Password</label><br>
+            <input type="password" id="pword" name="pword" placeholder="Enter a password" required><br><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
